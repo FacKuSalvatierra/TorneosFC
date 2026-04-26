@@ -15,7 +15,7 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "PES Torneos",
+  title: "Torneitos",
   description: "Gestión de torneos de fútbol para amigos",
 };
 
