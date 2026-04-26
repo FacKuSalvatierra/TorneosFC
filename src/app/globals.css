@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0f;
+  --surface: #16161f;
+  --surface-hover: #1e1e2a;
+  --primary: #ff4d4d;
+  --primary-glow: #ff4d4d66;
+  --secondary: #1a1a2e;
+  --accent: #ffd700;
+  --accent-glow: #ffd70066;
+  --text: #ffffff;
+  --text-muted: #8888aa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-rajdhani), sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-orbitron), sans-serif;
+}
+
+.glow-border {
+  box-shadow: 0 0 10px var(--primary-glow), inset 0 0 10px var(--primary-glow);
+}
+
+.accent-glow {
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--background) 0%, var(--secondary) 100%);
+}
